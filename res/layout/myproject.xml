@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainweixin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:orientation="vertical" >
+     
+    <LinearLayout
+        android:id="@+id/myproject_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <include layout="@layout/myproject_search_layout" >
+        </include>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/myproject_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myproject_search"
+        android:layout_above="@id/footbar_layout_ly">
+        <include layout="@layout/myproject_content_layout" >
+        </include>
+    </LinearLayout>
+ 
+</RelativeLayout>

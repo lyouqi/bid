@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="54dip"
+    android:background="@drawable/bottom_bg"
+    android:gravity="bottom"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/footbar_tenderfile"
+        android:layout_width="64dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:background="@drawable/home_bottom_style"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_footbar_tenderfile"
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:layout_gravity="center"
+            android:background="@drawable/file" />
+
+        <TextView
+            android:id="@+id/home_bottom_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="招标公告"
+            android:textColor="@android:color/white"
+            android:textSize="10dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footbar_myproject"
+        android:layout_width="64dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:background="@drawable/home_bottom_style"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_footbar_myproject"
+            android:layout_width="28dip"
+            android:layout_height="29dip"
+            android:layout_gravity="center"
+            android:background="@drawable/myproject" />
+
+        <TextView
+            android:id="@+id/home_bottom_style_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="我的项目"
+            android:textColor="@android:color/white"
+            android:textSize="10dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footbar_member"
+        android:layout_width="64dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:background="@drawable/home_bottom_style"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_footbar_member"
+            android:layout_width="28dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:background="@drawable/member" />
+
+        <TextView
+            android:id="@+id/home_bottom_shopping_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dip"
+            android:text="会员管理"
+            android:textColor="@android:color/white"
+            android:textSize="10dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footbar_set"
+        android:layout_width="64dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:background="@drawable/home_bottom_style"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_footbar_set"
+            android:layout_width="28dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:background="@drawable/set" />
+
+        <TextView
+            android:id="@+id/home_bottom_show_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="2dip"
+            android:text="设置"
+            android:textColor="@android:color/white"
+            android:textSize="10dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

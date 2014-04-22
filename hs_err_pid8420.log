@@ -1,0 +1,94 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3494), pid=8420, tid=8708
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_43-b01
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.14-b01 mixed mode windows-amd64 compressed oops)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000024d000):  JavaThread "Unknown thread" [_thread_in_vm, id=8708, stack(0x0000000001e30000,0x0000000001f30000)]
+
+Stack: [0x0000000001e30000,0x0000000001f30000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000024d000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8708, stack(0x0000000001e30000,0x0000000001f30000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000042f000 	C:\Program Files\Java\jre6\bin\javaw.exe
+0x00007ffcb31f0000 - 0x00007ffcb339a000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffcb2c90000 - 0x00007ffcb2dca000 	C:\Windows\system32\KERNEL32.DLL
+0x00007ffcb0630000 - 0x00007ffcb073f000 	C:\Windows\system32\KERNELBASE.dll
+0x00007ffcaee50000 - 0x00007ffcaeed8000 	C:\Windows\system32\apphelp.dll
+0x00007ffca50a0000 - 0x00007ffca50ef000 	C:\Windows\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ffcb2be0000 - 0x00007ffcb2c87000 	C:\Windows\system32\msvcrt.dll
+0x00007ffcb0340000 - 0x00007ffcb036b000 	C:\Windows\SYSTEM32\SspiCli.dll
+0x00007ffcb3150000 - 0x00007ffcb31a1000 	C:\Windows\system32\SHLWAPI.dll
+0x00007ffcb13a0000 - 0x00007ffcb1511000 	C:\Windows\system32\USER32.dll
+0x00007ffcb0f10000 - 0x00007ffcb1088000 	C:\Windows\system32\ole32.dll
+0x00007ffcb1520000 - 0x00007ffcb2937000 	C:\Windows\system32\SHELL32.dll
+0x00007ffcafb70000 - 0x00007ffcafb8e000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ffcb2b30000 - 0x00007ffcb2bd5000 	C:\Windows\system32\ADVAPI32.dll
+0x00007ffca7ce0000 - 0x00007ffca7cfb000 	C:\Windows\SYSTEM32\MPR.dll
+0x00007ffcb10f0000 - 0x00007ffcb1226000 	C:\Windows\system32\RPCRT4.dll
+0x00007ffcb0c50000 - 0x00007ffcb0ca7000 	C:\Windows\SYSTEM32\sechost.dll
+0x00007ffcb2f70000 - 0x00007ffcb3146000 	C:\Windows\SYSTEM32\combase.dll
+0x00007ffcb0dc0000 - 0x00007ffcb0f05000 	C:\Windows\system32\GDI32.dll
+0x00007ffcb0560000 - 0x00007ffcb0574000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007ffcae6e0000 - 0x00007ffcae77f000 	C:\Windows\SYSTEM32\SHCORE.dll
+0x00007ffcb31b0000 - 0x00007ffcb31e4000 	C:\Windows\system32\IMM32.DLL
+0x00007ffcb1240000 - 0x00007ffcb1379000 	C:\Windows\system32\MSCTF.dll
+0x000000006d810000 - 0x000000006dfcc000 	C:\Program Files\Java\jre6\bin\server\jvm.dll
+0x00007ffca8780000 - 0x00007ffca879f000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffca8750000 - 0x00007ffca877a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffcb0a20000 - 0x00007ffcb0a6a000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x00007ffcaf250000 - 0x00007ffcaf276000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x000000006d780000 - 0x000000006d78e000 	C:\Program Files\Java\jre6\bin\verify.dll
+0x000000006d3b0000 - 0x000000006d3d7000 	C:\Program Files\Java\jre6\bin\java.dll
+0x000000006d7d0000 - 0x000000006d7e2000 	C:\Program Files\Java\jre6\bin\zip.dll
+0x00007ffcb2b10000 - 0x00007ffcb2b17000 	C:\Windows\system32\PSAPI.DLL
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\Program Files (x86)\Android\android-sdk\platforms\android-10\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 57570 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -test com.zdph.tender.activity.GridContentActivity:getCurrentDate
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jre6
+CLASSPATH=.;C:\Program Files\Java\jre6\lib\rt.jar;C:\Program Files\Java\jre6\jre
+PATH=C:/Program Files/Java/jre6/bin/server;C:/Program Files/Java/jre6/bin;C:/Program Files/Java/jre6/lib/amd64;D:\Oracle\product\11.2.0\client_1\bin;C:\Program Files\Java\jre6\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.0\bin;C:\Program Files\Java\jre6\bin;D:\Program Files (x86)\Android\android-sdk\platform-tools;D:\Program Files (x86)\Android\android-sdk\tools;D:\android软件\Android;C:\Program Files (x86)\Java\jre6\bin;E:\360安全浏览器下载\IDE工具\Eclipse和插件\eclipse;
+USERNAME=admin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt
+
+Memory: 4k page, physical 3717360k(1033420k free), swap 7911664k(2070404k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (20.14-b01) for windows-amd64 JRE (1.6.0_43-b01), built on Mar  1 2013 01:52:33 by "java_re" with MS VC++ 8.0 (VS2005)
+
+time: Thu Apr 17 14:12:58 2014
+elapsed time: 0 seconds
+

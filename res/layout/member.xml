@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainweixin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@color/info_panel_bg"
+        android:layout_above="@id/footbar_layout_ly"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <!-- 第一个白框BEGIN -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="7.0dip"
+                android:background="@drawable/shape_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="60.0dip"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:paddingTop="4.0dip"
+                        android:src="@drawable/avatar" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="周超"
+                            android:textColor="@android:color/black"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4.0dip"
+                            android:gravity="center_vertical"
+                            android:text="北京中电普华信息技术有限公司"
+                            android:textColor="#ff545454"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="#ff545454"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="50.0dip"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5.0dip"
+                        android:text="备注"
+                        android:textColor="@android:color/black"
+                        android:textSize="18.0sp" />
+
+                    <EditText
+                        android:id="@+id/edit_comment"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/white"
+                        android:clickable="false"
+                        android:editable="true"
+                        android:focusable="false"
+                        android:hint="这家伙很懒，什么都没有留下"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textColor="#ff545454"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/change_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="修改"
+                        android:textColor="@color/button_unselected"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/member_seg1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/member_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:text="会员服务" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/member_seg2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

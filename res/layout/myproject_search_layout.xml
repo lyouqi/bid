@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/TITLE_EDIT_TEXT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:hint="项目搜索"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/RIGHT_BUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/btn_search" />
+
+</RelativeLayout>

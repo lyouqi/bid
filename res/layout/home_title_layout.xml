@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="43dip"
+    android:background="@drawable/title_background"
+    android:id="@+id/titlebar" >
+
+    <LinearLayout
+        android:id="@+id/imgViewBack"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_back_selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/titlebar_back"
+            android:visibility="visible" />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/titlebar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:textSize="20dp"
+		android:layout_centerInParent="true"
+        android:text="我的频道"/>
+    <ImageButton 
+        android:id="@+id/titlebar_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_mail"
+        android:layout_centerVertical="true"/>
+     
+
+</RelativeLayout>

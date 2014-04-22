@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainweixin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:orientation="vertical" >
+	
+   
+    <com.zdph.tender.view.MyScrollView
+        android:id="@+id/viewflipper_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ViewFlipper
+                android:id="@+id/mViewFliper_vf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:background="@drawable/ads_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:background="@drawable/ads_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:background="@drawable/ads_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:background="@drawable/ads_4" />
+                </LinearLayout>
+            </ViewFlipper>
+
+            <LinearLayout
+                android:id="@+id/home_date_ratio_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mViewFliper_vf" >
+
+                <include layout="@layout/home_data_bar" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.zdph.tender.view.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/home_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footbar_layout_ly"
+        android:layout_below="@id/viewflipper_scrollview"
+        android:background="@color/white" >
+
+        <include layout="@layout/home_content_layout" />
+    </LinearLayout>
+    
+ 
+</RelativeLayout>

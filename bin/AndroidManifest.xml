@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zdph.tender"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zdph.tender.ui.UI_Guide"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zdph.tender.ui.UI_Login" />
+        <activity android:name="com.zdph.tender.ui.UI_Main" />
+        <activity android:name="com.zdph.tender.ui.UI_MyProject" />
+        <activity android:name="com.zdph.tender.ui.UI_Member" />
+        <activity android:name="com.zdph.tender.ui.UI_Setup" />
+        <activity android:name="com.zdph.tender.fragmentactivity.BaseFragmentActivity" />
+        <activity android:name="com.zdph.tender.activity.MainActivity" />
+        <activity android:name="com.zdph.tender.fragmentactivity.TenderFileActivity" />
+        <activity android:name="com.zdph.tender.fragmentactivity.MyProjectActivity" />
+        <activity android:name="com.zdph.tender.fragmentactivity.MemberActivity" />
+        <activity android:name="com.zdph.tender.fragmentactivity.GridContentActivity" />
+        <activity android:name="com.zdph.tender.fragmentactivity.SetActivity" />
+        <activity android:name="com.zdph.tender.activity.TenderContentActivity" />
+    </application>
+
+</manifest>
