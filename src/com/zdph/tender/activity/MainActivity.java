@@ -28,6 +28,7 @@ public class MainActivity extends TabActivity implements OnClickListener {
 	private RelativeLayout titlebar=null;
 	private TextView titlebar_text;
 	private ImageView titlebar_img;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class MainActivity extends TabActivity implements OnClickListener {
 		// 取消软键盘
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+		//设置为无标题状态
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);

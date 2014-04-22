@@ -58,7 +58,6 @@ public class TenderFileActivity extends BaseFragmentActivity implements
 		thread.start();
 	}
 
-	 
 
 	private void initComponent() {
 		MyScrollView myScrollView = (MyScrollView) findViewById(R.id.viewflipper_scrollview);
