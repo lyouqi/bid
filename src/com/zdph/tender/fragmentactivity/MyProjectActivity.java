@@ -25,7 +25,7 @@ public class MyProjectActivity extends BaseFragmentActivity implements
 		// 取消软键盘
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-		//取消标题栏目
+		//取消标题栏
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		super.setContentView(R.layout.myproject);
